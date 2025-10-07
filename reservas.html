@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Reservas - El Rincón del Carmen</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">El Rincón del Carmen</h1>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="reservas.html">Reservas</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="admin.html">Panel</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Ver disponibilidad</h2>
+
+    <section class="search-box">
+      <form id="searchForm">
+        <label>Fecha entrada: <input type="date" id="start" required></label>
+        <label>Fecha salida: <input type="date" id="end" required></label>
+        <label>Personas: <input type="number" id="guests" min="1" value="1"></label>
+        <button class="btn" type="submit">Buscar</button>
+      </form>
+    </section>
+
+    <section id="results" class="results">
+      <!-- Aquí aparecerán las habitaciones disponibles -->
+    </section>
+
+    <section id="userActions">
+      <!-- Login / registro / mostrar usuario -->
+      <div id="authArea"></div>
+    </section>
+
+  </main>
+
+  <script type="module" src="components/room-card.js"></script>
+  <script type="module" src="components/auth-form.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

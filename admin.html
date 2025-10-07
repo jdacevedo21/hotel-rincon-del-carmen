@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Admin - El Rincón del Carmen</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">Admin - Rincón del Carmen</h1>
+      <nav>
+        <a href="index.html">Volver al sitio</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container admin-main">
+    <h2>Gestión de habitaciones</h2>
+
+    <form id="roomForm" class="card">
+      <input type="hidden" id="roomId">
+      <label>Nombre: <input id="roomName" required></label>
+      <label>Camas: <input type="number" id="beds" min="1" value="1"></label>
+      <label>Capacidad máxima: <input type="number" id="capacity" min="1" value="2"></label>
+      <label>Valor por noche (COP): <input type="number" id="price" min="0" value="100000"></label>
+      <label>Servicios (comma separados): <input id="services" placeholder="internet,minibar,jacuzzi"></label>
+      <button class="btn" type="submit">Guardar habitación</button>
+    </form>
+
+    <section id="roomsList"></section>
+
+    <h2>Reservas</h2>
+    <section id="adminReservations"></section>
+  </main>
+
+  <script src="js/storage.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
