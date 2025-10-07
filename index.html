@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Hotel El Rincón del Carmen</title>
   <link rel="stylesheet" href="css/styles.css">
+  <script src="js/carrusel.js"></script>
+
 </head>
 <body>
   <header class="site-header">
@@ -18,7 +20,38 @@
       </nav>
     </div>
   </header>
-
+<section class="carousel">
+    <div class="carousel-container">
+      <div class="slide active">
+        <img src="https://picsum.photos/1200/500?random=1" alt="Habitación elegante del hotel">
+        <div class="caption">
+          <h2>Descansa en nuestras habitaciones premium</h2>
+        </div>
+      </div>
+  
+      <div class="slide">
+        <img src="https://picsum.photos/1200/500?random=2" alt="Piscina del hotel">
+        <div class="caption">
+          <h2>Relájate en nuestra zona húmeda y spa</h2>
+        </div>
+      </div>
+  
+      <div class="slide">
+        <img src="https://picsum.photos/1200/500?random=3" alt="Restaurante del hotel">
+        <div class="caption">
+          <h2>Disfruta de la mejor gastronomía</h2>
+        </div>
+      </div>
+  
+      <!-- Botones de control -->
+      <button class="prev">❮</button>
+      <button class="next">❯</button>
+  
+      <!-- Indicadores -->
+      <div class="dots"></div>
+    </div>
+  </section>
+  
   <main>
     <section class="hero">
       <div class="hero-text">
